@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display|Ubuntu:300&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color: #b4ad9e;
+}
+a:hover {
+    color: #898377;
+}
+p {
+    line-height: 1.5rem;
+}
+h2,
+h3 {
+    margin: 1rem 0;
+    font-size: 30px;
+}
+header .navbar-brand {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+header .nav-item {
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+header .nav-item a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #cccccc;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+header .nav-item a:hover::after {
+    transform: scale(1);
+}
+.slider {
+    margin-bottom: 3rem;
+}
+.post-category,
+.post-comment-link {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.post-title a {
+    color: #626262;
+}
+.grid-posts {
+    margin-top: 5rem;
+}
+.grid-posts .card {
+    margin-bottom: 6.5rem;
+    border: none;
+}
+.grid-posts .post-category {
+    margin: 0;
+    margin-top: 2rem;
+}
+.load-more {
+    padding: 0.8rem 2rem;
+    margin-bottom: 6.5rem;
+    font-size: 20px;
+    border-radius: 0;    
+}
+.load-more span {
+    display: none;
+}
+.sign-up {
+    background-color: #f0f0f0;
+    padding: 70px 0;
+}
+.sign-up h3 {
+    color: #333333;
+}
+.sign-up form {
+    margin-top: 70px;
+}
+.sign-up .form-input {
+    position: relative;
+}
+.form-input .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sign-up .form-control {
+    border: none;
+    border-bottom: 1px solid #000000;
+    border-radius: 0;
+    background-color: transparent;
+}
+.sign-up .form-control:focus {
+    box-shadow: none;
+}
+footer {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    color: #000000;
+}
+.footer-left a {
+    margin-right: 1rem;
+    color: #000000;
+}
+.footer-right a {
+    color: #626262;
+    margin-left: 1rem;
+}
+.footer-right a:hover {
+    color: #b4ad9e;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    header .nav-item {
+        margin-left: 0;
+        text-align: center;
+    }
+    .post .post-title a {
+        font-size: 24px;
+    }
+    .post .post-text {
+        font-size: 12px;
+    }
+    .grid-posts .post-title {
+        font-size: 20px;
+    }
+    .grid-posts .card-text {
+        font-size: 12px;
+    }
+    .grid-posts .card {
+        margin-bottom: 4rem;
+    }
+    .sign-up h3 {
+        font-size: 24px;
+    }
+    .load-more {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    header .nav-item {
+        margin-left: 0;
+        text-align: center;
+    }
+    .post .post-title a {
+        font-size: 22px;
+    }
+    .post .post-text {
+        font-size: 12px;
+    }
+    .grid-posts {
+        margin-top: 3rem;
+    }
+    .grid-posts .card {
+        margin-bottom: 3rem;
+    }
+    .load-more {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    header .nav-item {
+        margin-left: 0;
+        text-align: center;
+    }
+    .post .post-title a {
+        font-size: 20px;
+    }
+    .post .post-text {
+        font-size: 11px;
+    }
+    .grid-posts {
+        margin-top: 3rem;
+    }
+    .grid-posts .card {
+        margin-bottom: 4rem;
+    }
+    .card .post-title {
+        font-size: 20px;
+    }
+    .card .card-text {
+        font-size: 11px;
+    }
+    .sign-up h3 {
+        font-size: 20px;
+    }
+    .load-more {
+        margin-bottom: 4rem;
+        font-size: 14px;
+    }
+    .sign-up {
+        padding: 40px 0;
+    }
+    .sign-up form {
+        margin-top: 40px;
+    }
+    .form-input .btn {
+        position: absolute;
+        right: 0;
+        top: -5px;
+    }
+    .form-control {
+        font-size: 12px;
+    }
+    footer {
+        padding: 2rem;
+        font-size: 11px;
+        text-align: center;
+    }
+    .footer-left {
+        margin-bottom: 1rem;
+    }    
+}
+
+
+
+
